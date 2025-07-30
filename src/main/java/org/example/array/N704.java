@@ -1,6 +1,6 @@
 package org.example.array;
 
-public class BinarySearch {
+public class N704 {
     public int search(int[] nums, int target) {
         int l = 0, r = nums.length - 1;
         while (l < r) {
@@ -11,7 +11,7 @@ public class BinarySearch {
         return nums[l] == target ? l : -1;
     }
     public static void main(String[] args) {
-        BinarySearch binarySearch = new BinarySearch();
+        N704 binarySearch = new N704();
         int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int target = 5;
         int result = binarySearch.search(nums, target);
